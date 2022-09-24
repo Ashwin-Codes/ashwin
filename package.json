@@ -1,0 +1,25 @@
+{
+  "name": "ashwin",
+  "version": "1.0.0",
+  "description": "Command Line Portfolio Of Ashwin Bhargava",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashwin-Codes/ashwin.git"
+  },
+  "keywords": [
+    "portfolio",
+    "ashwin",
+    "ashwinbhargava",
+    "ashwincodes"
+  ],
+  "author": "Ashwin Bhargava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashwin-Codes/ashwin/issues"
+  },
+  "homepage": "https://github.com/Ashwin-Codes/ashwin#readme"
+}
