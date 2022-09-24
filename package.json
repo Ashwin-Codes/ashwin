@@ -1,25 +1,32 @@
 {
-  "name": "ashwin",
-  "version": "1.0.0",
-  "description": "Command Line Portfolio Of Ashwin Bhargava",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ashwin-Codes/ashwin.git"
-  },
-  "keywords": [
-    "portfolio",
-    "ashwin",
-    "ashwinbhargava",
-    "ashwincodes"
-  ],
-  "author": "Ashwin Bhargava",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Ashwin-Codes/ashwin/issues"
-  },
-  "homepage": "https://github.com/Ashwin-Codes/ashwin#readme"
+	"name": "ashwin",
+	"version": "1.0.0",
+	"description": "Command Line Portfolio Of Ashwin Bhargava",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Ashwin-Codes/ashwin.git"
+	},
+	"keywords": [
+		"portfolio",
+		"ashwin",
+		"ashwinbhargava",
+		"ashwincodes"
+	],
+	"author": "Ashwin Bhargava",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Ashwin-Codes/ashwin/issues"
+	},
+	"homepage": "https://github.com/Ashwin-Codes/ashwin#readme",
+	"dependencies": {
+		"chalk": "^5.0.1",
+		"figlet": "^1.5.2",
+		"inquirer": "^9.1.2",
+		"nanospinner": "^1.1.0"
+	}
 }
