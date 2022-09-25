@@ -14,8 +14,8 @@ function createTitle() {
 	if (consoleWidth >= 180) font = "NScript";
 	if (consoleWidth < 180 && consoleWidth >= 167) font = "3D Diagonal";
 	if (consoleWidth < 167 && consoleWidth >= 123) font = "Bloody";
-	if (consoleWidth < 123 && consoleWidth >= 82) font = "Elite";
-	if (consoleWidth < 82 && consoleWidth >= 64) font = "Pagga";
+	if (consoleWidth < 123 && consoleWidth >= 71) font = "Thin";
+	if (consoleWidth < 72 && consoleWidth >= 64) font = "Pagga";
 	if (consoleWidth < 64 && consoleWidth >= 43) font = "Calvin S";
 	if (consoleWidth < 43 && consoleWidth >= 35) font = "Italic";
 	if (consoleWidth < 35 && consoleWidth >= 31) font = "Short";

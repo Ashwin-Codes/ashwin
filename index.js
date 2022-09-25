@@ -20,3 +20,16 @@ function space(numOfSpaces) {
 
 	console.log(spaces.join(""));
 }
+
+// Adding Map to Objects
+
+Object.prototype.map = function (cb) {
+	const objMap = [];
+	const obj = this;
+	for (let key in obj) {
+		if (this.hasOwnProperty(key)) {
+			objMap.push(cb(obj[key], key));
+		}
+	}
+	return objMap;
+};
