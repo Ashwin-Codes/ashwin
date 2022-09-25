@@ -2,11 +2,12 @@
 import options from "./sections/options/index.js";
 import header from "./sections/header/index.js";
 
-async function main() {
+export default async function main() {
+	const consoleWidth = process.stdout.columns;
 	console.clear();
-	space(2);
+	consoleWidth <= 42 ? space(0) : space(2);
 	await header();
-	space(3);
+	consoleWidth <= 42 ? space(0) : space(3);
 	await options();
 }
 
@@ -21,8 +22,7 @@ function space(numOfSpaces) {
 	console.log(spaces.join(""));
 }
 
-// Adding Map to Objects
-
+// Adding Map feature to Objects
 Object.prototype.map = function (cb) {
 	const objMap = [];
 	const obj = this;

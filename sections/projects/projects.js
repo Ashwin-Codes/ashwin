@@ -9,9 +9,8 @@ import openUrl from "../options/openUrl.js";
 // Options
 
 const choices = {
-	github: "Github",
-	linkedIn: "Linkedin",
-	medium: "Medium",
+	updrop: "Updrop",
+	hexhub: "Hexhub",
 	back: "Go Back",
 	quit: "Quit",
 };
@@ -26,30 +25,26 @@ function chalkTheme(theme) {
 
 chalkTheme(chalk.white.bold);
 
-export default async function socials() {
+export default async function projects() {
 	const option = await inquirer.prompt({
-		name: "My Socials",
+		name: "Live Projects",
 		type: "list",
-		message: "Pick a social :",
+		message: "Pick a live project :",
 		prefix: " ",
 		choices: choices.map((value, key) => {
 			return value;
 		}),
 	});
 
-	const choice = option["My Socials"];
+	const choice = option["Live Projects"];
 
-	if (choice === choices.github) {
-		openUrl("github");
-		socials();
+	if (choice === choices.updrop) {
+		openUrl("updrop");
+		projects();
 	}
-	if (choice === choices.linkedIn) {
-		openUrl("linkedin");
-		socials();
-	}
-	if (choice === choices.medium) {
-		openUrl("medium");
-		socials();
+	if (choice === choices.hexhub) {
+		openUrl("hexhub");
+		projects();
 	}
 	if (choice === choices.back) {
 		options();

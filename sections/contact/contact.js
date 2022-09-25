@@ -1,6 +1,7 @@
 import inquirer from "inquirer";
 import clipboardy from "clipboardy";
 import fetch from "node-fetch";
+import chalk from "chalk";
 import { createSpinner } from "nanospinner";
 
 // Option Handlers
@@ -9,7 +10,6 @@ import openUrl from "../options/openUrl.js";
 import options from "../options/index.js";
 
 // Choices
-
 const choices = {
 	message: "Message Me",
 	mail: "Mail Me",
@@ -18,10 +18,22 @@ const choices = {
 	quit: "Quit",
 };
 
+function chalkTheme(theme) {
+	if (theme) {
+		for (const key in choices) {
+			choices[key] = theme(choices[key]);
+		}
+	}
+}
+
+chalkTheme(chalk.white.bold);
+
 export default async function contact() {
 	const option = await inquirer.prompt({
 		name: "Contact",
 		type: "list",
+		message: "Pick a method of communication :",
+		prefix: " ",
 		choices: choices.map((value, key) => {
 			return value;
 		}),
@@ -63,11 +75,21 @@ async function messageHandler() {
 			name: "Message",
 			message: "Enter Your Message",
 			type: "input",
+			prefix: " ",
+
+			transformer: function (line) {
+				return chalk.white.bold(line);
+			},
 		},
 		{
 			name: "Email",
 			message: "Enter Your Email",
 			type: "input",
+			prefix: " ",
+
+			transformer: function (line) {
+				return chalk.white.bold(line);
+			},
 		},
 	]);
 
@@ -85,8 +107,8 @@ async function messageHandler() {
 	});
 
 	if (!res.ok) {
-		spinner.error({ text: "Mail Sent Failed" });
+		spinner.error({ text: "Message Sent Failed" });
 	}
 
-	spinner.success({ text: "Mail Sent" });
+	spinner.success({ text: "Message Sent" });
 }

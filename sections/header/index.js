@@ -21,7 +21,7 @@ function createTitle() {
 	if (consoleWidth < 35 && consoleWidth >= 31) font = "Short";
 
 	// Return normal text if width is too less
-	if (consoleWidth < 31) return gradient.pastel.multiline("Ashwin Bhargava");
+	if (consoleWidth < 31) return gradient.pastel.multiline("  Ashwin Bhargava");
 
 	const asci = figlet.textSync("Ashwin Bhargava", { font: font });
 	const gradientAsci = gradient.pastel.multiline(asci);
