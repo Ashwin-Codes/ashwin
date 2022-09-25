@@ -93,7 +93,7 @@ async function messageHandler() {
 		},
 	]);
 
-	const spinner = createSpinner("Sending Mail !").start();
+	const spinner = createSpinner("Sending Message..").start();
 
 	const res = await fetch("https://ashwincodes.com/contact", {
 		method: "POST",

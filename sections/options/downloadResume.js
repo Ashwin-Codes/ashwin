@@ -17,11 +17,12 @@ export default async function downloadResume() {
 		res.pipe(filePath);
 		filePath.on("finish", () => {
 			filePath.close();
-			spinner.success({ text: "Resume Downloaded" });
+			spinner.success({
+				text: "Resume downloaded in current directory.",
+			});
+			setTimeout(() => {
+				main();
+			}, 2000);
 		});
 	});
-
-	setTimeout(() => {
-		main();
-	}, 2000);
 }

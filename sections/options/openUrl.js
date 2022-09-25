@@ -24,6 +24,6 @@ export default function openUrl(siteName) {
 	}
 
 	if (siteName === "medium") {
-		open("https://github.com/ashwin-codes");
+		open("https://medium.com/@AshwinCodes");
 	}
 }
