@@ -7,4 +7,4 @@ build and run using `npm`:
 
 > **_NOTE:_** NODE and NPM is required to run this tool.
 
-Give it a shot with `npx ashwin`
+Give it a shot with `npx ashwincodes`

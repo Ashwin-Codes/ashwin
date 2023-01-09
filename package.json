@@ -1,8 +1,9 @@
 {
-	"name": "ashwin",
+	"name": "ashwincodes",
 	"version": "1.0.0",
 	"description": "Command Line Portfolio Of Ashwin Bhargava",
 	"main": "index.js",
+	"bin": "./index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
